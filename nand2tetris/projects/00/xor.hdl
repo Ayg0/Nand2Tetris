@@ -1,0 +1,12 @@
+CHIP xor{
+
+	IN 	a, b;
+	OUT out;
+
+	PARTS:
+	NOT(in:a, out:notA);
+	NOT(in:b, out:notB);
+	AND(in:a, in:notB, out:AnotB);
+	AND(in:b, in:notA, out:BnotA);
+	OR(in:AnotB, in:BnotA, out:out);
+}

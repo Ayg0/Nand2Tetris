@@ -1,0 +1,23 @@
+CHIP Return16 {
+    IN in;
+    OUT out[16];
+
+    PARTS:
+    Not(in=in, out=notIn);
+    Not(in=notIn, out=out[0]);
+    Not(in=notIn, out=out[1]);
+    Not(in=notIn, out=out[2]);
+    Not(in=notIn, out=out[3]);
+    Not(in=notIn, out=out[4]);
+    Not(in=notIn, out=out[5]);
+    Not(in=notIn, out=out[6]);
+    Not(in=notIn, out=out[7]);
+    Not(in=notIn, out=out[8]);
+    Not(in=notIn, out=out[9]);
+    Not(in=notIn, out=out[10]);
+    Not(in=notIn, out=out[11]);
+    Not(in=notIn, out=out[12]);
+    Not(in=notIn, out=out[13]);
+    Not(in=notIn, out=out[14]);
+    Not(in=notIn, out=out[15]);
+}
