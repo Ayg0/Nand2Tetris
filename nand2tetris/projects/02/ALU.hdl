@@ -44,7 +44,6 @@ CHIP ALU {
     // zero or x/y
     Mux16(a=x, b=false, sel=zx, out=xOrZero);
     Mux16(a=y, b=false, sel=zy, out=yOrZero);
-
     // Not ? 
     Not16(in=xOrZero, out=notXorZero);
     Not16(in=yOrZero, out=notYorZero);
